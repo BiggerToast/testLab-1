@@ -1,0 +1,37 @@
+#include <iostream>
+#include <fstream>
+#include <string>	
+using namespace std;
+
+int main() {
+	string word1, word2, word3, word4, word5, word6, word7;	
+	//ofstream fout("project1.txt");
+
+	//
+	//fout << "Esequiel" << endl;
+	//cout << "Casillas" << endl;
+
+	//fout.close();
+
+	ifstream fin("Projecttext.txt");
+
+	fin >> word1;
+	cout << word1 << endl;
+
+	fin >> word2;
+	cout << word2 << endl;
+
+	fin >> word3;
+	cout << word3 << endl;
+
+	fin >> word4;
+	cout << word4 << endl;
+
+	fin >> word5;
+	cout << word5 << endl;
+
+	fin >> word6;
+	cout << word6 << endl;
+
+	fin >> word7;
+	cout << word7 << endl;
