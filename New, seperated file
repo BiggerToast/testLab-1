@@ -1,0 +1,64 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+#include<iomanip>
+#include <string>
+
+int main()
+{
+    string Name;
+    int multi;
+
+
+    cout << "Enter employee's name:";
+    getline(cin, Name);
+
+    cout << endl;
+
+    cout << "enter the number 1";
+    cin >> multi;
+    cout << setw(2) << "Enter Item #1" << setw(4) << " apple" << endl <<
+        setw(2) << "Enter price:" << setw(3) << multi * 1.50 << endl <<
+        setw(2) << "Enter Item #2" << setw(4) << " Bread " << endl <<
+        setw(2) << "Enter price:" << setw(3) << multi * 2.25 << endl <<
+        setw(2) << "Enter Item #3" << setw(4) << " frozen Meal" << endl <<
+        setw(2) << "Enter price:" << setw(3) << multi * 3.00 << endl <<
+        setw(2) << "Enter Item #4" << setw(4) << " Choclate" << endl <<
+        setw(2) << "Enter price:" << setw(3) << multi * 4.50 << endl <<
+        setw(2) << "Enter Item #5" << setw(4) << "-" << endl <<
+        setw(2) << "Enter price:" << setw(3) << multi * 0 << endl;
+
+    cout << endl;
+    cout << endl;
+
+	// the note will begin right here and will be printed out in the note pad
+	ofstream fout("project2text.txt");
+
+    fout << setw(5) << "THANKS FOR SHOPPING AT" << endl <<
+        setw(3) << "MY STORE" << endl;
+
+    fout << "Associate:" << Name;
+    fout << endl;
+    fout << "Store# 5" << endl;
+    fout << "edingburg, TX 78359" << endl;
+    fout << endl;
+
+    fout << setw(3) << "Apple" << setw(15) << "$" << 1.50 << endl <<
+        setw(3) << "Bread" << setw(15) << "$" << 2.25 << endl <<
+        setw(3) << "Frozen Meal" << setw(15) << "$" << 3.00 << endl <<
+        setw(3) << "choclate" << setw(15) << "$" << 4.50 << endl <<
+        setw(1) << "-" << setw(15) << "$" << 0.00 << endl;
+
+    fout << endl;
+
+    fout << "subtotal" << setw(10) << "$" << "11.25" << endl;
+    fout << "tax" << setw(10) << "$" << "1.60" << endl;
+    fout << "total" << setw(10) << "$" << "12.94" << endl;
+    fout << endl;
+    fout << "*** customer Copy ***";
+
+	fout.close();
+
+
+    return 0;
+}
