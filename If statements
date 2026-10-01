@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+void makeSushi();
+void makespagetti();
+void makechickienwings();
+void makechickienalfreado();
+int main()
+{
+    char option;
+    
+    cout<<"Menu: ";
+    
+    cout << endl;
+    
+    cout << "option A. susi" << endl;
+    cout << "option B. spagetti" << endl;
+    cout << "option C. chicken wings" << endl;
+    cout << "option D. chickien alfreado" << endl;
+    cout << endl;
+    
+    cout << "what do you want to pick up today?" << endl;
+    cin >> option;
+    
+    option = tolower(option);
+
+    if(option == 'a'){
+        makeSushi();
+    } else if (option == 'b'){
+        makespagetti();
+    } else if (option == 'c'){
+        makechickienwings();
+    } else if (option == 'd'){
+        makechickienalfreado();
+    }
+// the option = tolower(option); allows you to pick "a" and "A"
+//
+    return 0;
+}
+
+void makeSushi(){
+    cout << "making the sushi"<< endl;
+}
+void makespagetti(){
+    cout << "making spagetti" << endl;
+}
+void makechickienwings(){
+    cout << "making chickien wings"<< endl;
+}
+void makechickienalfreado(){
+    cout << "making chickien alfreado" << endl;
+}
