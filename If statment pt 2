@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cctype>
+
+
+using namespace std;
+void tryWingstope();
+
+int main() {
+	string resturant;
+	
+	cout << "Whats your Favorite restaurant: ";
+	cin >> resturant;
+
+	for (char &c : resturant) {
+		c = tolower(c);
+	}
+
+	if(resturant == "wingstop") {
+		tryWingstope();
+	} else {
+		cout << "Huh... never heard of it. Have you tried Wingstop?" << endl;
+	}
+
+	return 0;
+}
+void tryWingstope() {
+	cout << "Welcome to the wining team!" << endl;
+}
