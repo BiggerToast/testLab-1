@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cctype>
+
+using namespace std;
+
+void divion(int a, int b);
+
+int main() {
+
+		int a, b;
+
+		cout << "enter the numerator: ";
+		cin >> a;
+		cout << "enter the denominator: ";
+		cin >> b;
+
+
+
+		divion(a , b);
+	return 0;
+}
+	void divion(int a, int b) {
+		if (b == 0) {
+			cout << "Division of zero, cannot be performed" << endl;
+		} else {
+			cout << "The result is " << a / b << endl;
+		}
+	}
