@@ -3,26 +3,30 @@
 
 
 using namespace std;
-void tryWingstope();
+void tryWingstope(string resturant);
 
 int main() {
 	string resturant;
-	
+
 	cout << "Whats your Favorite restaurant: ";
 	cin >> resturant;
 
-	for (char &c : resturant) {
+	for (char& c : resturant) {
 		c = tolower(c);
 	}
 
-	if(resturant == "wingstop") {
-		tryWingstope();
-	} else {
+	tryWingstope(resturant);
+	return 0;
+}
+
+void tryWingstope(string resturant) {
+
+
+	if (resturant == "wingstop") {
+		cout << "Welcome to the wining team!" << endl;
+	}
+	else {
 		cout << "Huh... never heard of it. Have you tried Wingstop?" << endl;
 	}
 
-	return 0;
-}
-void tryWingstope() {
-	cout << "Welcome to the wining team!" << endl;
 }
