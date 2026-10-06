@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+
+    switch(age){
+        case 13:
+    cout << "child";
+    break;
+        case 18:
+    cout << "Teenagernager";
+    break;
+        case 65:
+    cout << "Adult";
+    break;
+        default:
+    cout << "Senior";
+    break;
+    }
+    cout << age;
+    return 0;
+}
