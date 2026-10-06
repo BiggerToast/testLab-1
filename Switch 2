@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int number = 10;
+    
+    switch(number %2){
+        case 0:
+    cout << "Even";
+    break;
+        case 1:
+    cout << "Odd";
+    break;
+        default:
+    cout << "Zero";
+    break;
+    }
+
+    cout << number;
+    return 0;
+}
