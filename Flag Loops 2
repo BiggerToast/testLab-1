@@ -6,18 +6,19 @@ int main()
 {
     char option;
     bool positive = true;
+    
+    option = tolower(option);
+    
+    while (positive == true){
     cout << "enter a Menu option";
     cout << endl << endl << endl;
     cout << "option A" << endl;
     cout << "option B" << endl;
     cout << "option C" << endl;
+    cout << "q to quit" << endl;
     
     cout << "enter here: ";
     cin >> option;
-    
-    option = tolower(option);
-    
-    while (positive == true){
         if (option == 'a'){
         cout << "menu on option a is AHHHH " << endl;
         }
@@ -26,6 +27,9 @@ int main()
         }
         else if(option == 'c'){
         cout << "menu on option b is uhh i forgot" << endl;
+        }
+        else if(option == 'q'){
+        positive = false;
         }
         else
         cout << "pick something on the menu dumb ahh"<< endl;
