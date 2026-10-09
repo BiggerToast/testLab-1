@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cctype>
+using  namespace std;
+
+int main()
+{
+    char option;
+    bool positive = true;
+    cout << "enter a Menu option";
+    cout << endl << endl << endl;
+    cout << "option A" << endl;
+    cout << "option B" << endl;
+    cout << "option C" << endl;
+    
+    cout << "enter here: ";
+    cin >> option;
+    
+    option = tolower(option);
+    
+    while (positive == true){
+        if (option == 'a'){
+        cout << "menu on option a is AHHHH " << endl;
+        }
+        else if(option == 'b'){
+        cout << "menu on option b is Basterd LET ME GO" << endl;
+        }
+        else if(option == 'c'){
+        cout << "menu on option b is uhh i forgot" << endl;
+        }
+        else
+        cout << "pick something on the menu dumb ahh"<< endl;
+        
+    }
+    
+    return 0;
+}
