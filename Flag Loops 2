@@ -19,20 +19,28 @@ int main()
     
     cout << "enter here: ";
     cin >> option;
+    cout << endl;
         if (option == 'a'){
         cout << "menu on option a is AHHHH " << endl;
+        positive = false;
         }
+        //stops
         else if(option == 'b'){
         cout << "menu on option b is Basterd LET ME GO" << endl;
+        positive = false;
         }
+        //stops
         else if(option == 'c'){
-        cout << "menu on option b is uhh i forgot" << endl;
+        cout << "menu on option b is uhh i forgot pick again" << endl;
         }
+        //continues the program
         else if(option == 'q'){
         positive = false;
         }
+        //stops
         else
-        cout << "pick something on the menu dumb ahh"<< endl;
+        cout << "pick something on the menu, dumb ahh"<< endl;
+        //continures the program if any of the options wernt pressed
         
     }
     
