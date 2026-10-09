@@ -1,0 +1,19 @@
+#include <iostream>
+using  namespace std;
+
+int main()
+{
+    int i = 100;
+    int o = -50;
+    while (i >= 50){
+        cout << i << " ";
+    i--;
+    }
+    
+    cout << endl << endl;
+    while (o <= -100){
+        cout << o << " ";
+    o--;
+    }
+    return 0;
+}
