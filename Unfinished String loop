@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string word = "george";
+    int count = 1;
+    for(int i= 1; word.length(); i++){
+    if(word[i] == 'a' || word[i] == 'e'|| word[i] == 'i'|| word[i] == 'o'|| word[i] == 'w' ){
+        count++;
+    }
+    }
+    return 0;
+}
