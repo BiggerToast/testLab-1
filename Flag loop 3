@@ -1,0 +1,21 @@
+int main()
+{
+    string password;
+    bool incorrect = true;
+
+    
+    cin >> password;
+    
+    while(incorrect == true){
+    if(password == "UTRGV"){
+        incorrect = false;    
+    }
+    else{
+        cout << password << "is incorrect try again" << endl;
+        cin >> password;
+    }
+    }
+    cout << "entered correct password";
+
+    return 0;
+}
