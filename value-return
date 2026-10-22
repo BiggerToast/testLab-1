@@ -1,0 +1,12 @@
+int addThreeNumbers(int a, int b, int c) {
+    int sum = a + b + c;
+    return sum; 
+}
+
+int main() {
+    int result = addThreeNumbers(5, 10, 15);
+    
+    cout << "The total sum is: " << result << endl;
+    
+    return 0;
+}
