@@ -5,8 +5,7 @@ int square(int n){
 int r = n * n;
 return r;}
 
-int main()
-{
+int main(){
 
     cout << square(x);
     int s = square(x);
