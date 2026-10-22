@@ -1,0 +1,11 @@
+int main()
+{
+    int life = 3;
+    
+    while (life > 0){
+    cout << "hp is at: " << life << endl;
+    
+    life--;
+}
+    return 0;
+}
