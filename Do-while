@@ -1,0 +1,18 @@
+int main() {
+    int number;
+
+    do {
+        cout << "Enter a number between 1 and 10: ";
+        cin >> number;
+
+
+        if (number < 1 || number > 10) {
+            cout << "Invalid input.\n\n";
+        }
+
+    } while (number < 1 || number > 10);
+
+    cout << "Success!: " << number << endl;
+
+    return 0;
+}
