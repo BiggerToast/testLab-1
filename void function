@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void greetUser(string name);
+
+int main()
+{
+    string name;
+    
+    cout << "enter your name:";
+    cin >> name;
+    
+    greetUser(name);
+
+    return 0;
+}
+void greetUser(string name){
+    cout << "greetings " << name;
+}
