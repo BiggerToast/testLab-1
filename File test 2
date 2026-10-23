@@ -1,0 +1,19 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+
+
+int main()
+{
+    string words;
+    
+    ifstream fin("filename.txt");
+    
+    while (!fin.eof()){
+        
+    fin >> words;
+    cout << words << " ";
+    }
+    return 0;
+}
