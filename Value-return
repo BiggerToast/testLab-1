@@ -6,9 +6,12 @@ int r = n * n;
 return r;}
 
 int main(){
+    int n;
+    
+    cin >> n;
 
-    cout << square(x);
-    int s = square(x);
+    cout << square(n);
+    int s = square(n);
 
     return 0;
 }
