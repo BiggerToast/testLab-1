@@ -1,0 +1,13 @@
+const int SIZE = 5;
+    char stars[SIZE]; //declaring how many buckets are needed in array
+    
+    //stars[1] = '*'; 
+    //stars[4] = '*';
+    
+    for(int i = 0; i < SIZE; i++){
+        stars [i] = '*'; // what ever is in ( i ) changes * rather than garbage
+        cout << stars[i] << endl;
+    }
+    
+    //cout << "debug: [1] " <<stars[0] << endl;/// output statment using the 1
+    //cout << "debug: [3] " <<stars[3] << endl;
