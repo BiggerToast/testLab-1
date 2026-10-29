@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int const students = 10;
+    int grades[students];
+    
+    grades[0] = 20;
+    grades[1] = 45;
+    grades[2] = 55;
+    grades[3] = 25;
+    grades[4] = 01;
+    grades[5] = 88;
+    grades[6] = 70;
+    grades[7] = 95;
+    grades[8] = 70;
+    grades[9] = 99;
+    
+    for(int i = 0; i < students; i++){
+        cout << grades[i] << endl;
+    }
+    
+    return 0;
+}
