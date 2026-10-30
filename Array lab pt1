@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    
+    int num;
+    const int Array_size = 10;
+    int data[] = {42, 7, 19, 3, 56, 23, 88, 15, 30, 61};
+    
+    
+    int position = 0;
+    bool found = true;
+    
+    cin >> num;
+    
+    while (position < Array_size()) &(NOT found)
+    if (list[position] == num){
+    found = false;}
+    else{
+    position = position + 1;
+    }
