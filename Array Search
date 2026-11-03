@@ -2,15 +2,18 @@
 
 using namespace std;
 
-int search(int target, const int arr[], int size){
+int search(int point, const int arr[], int size){
     for (int i = 0; i < size; i++){
-        if (arr[i] == target){
+        if (arr[i] == point){
             return i;
         }
     }
     return -1;
 }
 
+//point is the 15
+// arr is the = to the will be the diffrent numbers in the ARRAY_SIZE
+// size is just the ARRAY_SIZE from 0-4
 
 int main()
 {
