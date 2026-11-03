@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    const int ROW = 9;
+    const int COL = 5;
+    int array[ROW][COL];
+    
+    //int rows, cols;
+    //cout << "enter number row";
+    //cin >> rows;
+    //cout << "enter number col";
+    //cin >> cols;
+    
+    
+    int a[5];
+    for (int r = 0; r < 9; r++){
+        for(int c = 0; c < 5; c++){
+            array[r][c] = 0;
+        }
+    }
+    
+    array[4][2] = 90;
+    cout <<  array[4][2];
+
+    return 0;
+}
