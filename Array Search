@@ -6,14 +6,14 @@ int search(int point, const int numbers[], int ARRAY_SIZE){
     }
     return -1;
 }
-
+//the search is getting the index of where 15 is positioned.
 int main()
 {
     const int ARRAY_SIZE = 5;
     int numbers[ARRAY_SIZE] = {5, 10, 15, 20, 25};
     
     int index = search(15, numbers, ARRAY_SIZE);
-    
+
     if (index < 0){
         cout << "the number was not found.";
     }
