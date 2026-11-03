@@ -1,0 +1,97 @@
+#include <iostream>
+using namespace std;
+
+    int calculateSum(int arr[], int size){
+        
+    int total = 0;
+    
+        for (int i = 0; i < size; i++){
+            total += arr[i];  
+        }
+    return total;
+    }
+
+int main()
+{
+    int const students = 10;
+    int grades[students];
+    
+    grades[0] = 20;
+    grades[1] = 95;
+    grades[2] = 55;
+    grades[3] = 25;
+    grades[4] = 01;
+    grades[5] = 88;
+    grades[6] = 70;
+    grades[7] = 45;
+    grades[8] = 70;
+    grades[9] = 99;
+    
+    
+    int lowest = grades[0];
+    int highest = grades[0];
+    
+    for(int i = 1; i < students; i++){
+        if (grades[i] < lowest){
+            lowest = grades[i];
+        }
+        if (grades[i] > highest) {
+            highest = grades[i];
+        }
+    }
+    
+    
+    
+    //sum of all the grades
+    int totalSum = calculateSum(grades, students);
+    cout << "total sum of grades: " << totalSum << endl;
+    
+    //average if the grades
+    int average = totalSum / students;
+    cout << "average grade: " << average << endl;
+    
+    //line 39-49
+    cout << "the lowest score: " << lowest << endl;
+    cout << "the highest score: " << highest << endl;
+    
+    //displays the ones from 70 or above
+    for(int h = 0; h < students; h++){
+        if(grades[h] >= 70)
+            cout << "passing students " << h << ": " << grades[h] << endl;
+    }
+    
+    //displays above average
+    for(int j = 0; j < students; j++){
+        if(grades[j] > average)
+            cout << "above average students " << j << ": " << grades[j] << endl;
+    }
+    
+    // order they were entered
+    cout << "as entered" << endl;
+    for(int r = 0; r < students; r++){
+        cout << grades[r] << endl;
+    }
+    
+    // order as they are reversed
+    cout << "as reversed" << endl;
+    for(int e = students - 1; e >= 0; e--){
+        cout << grades[e] << endl;
+    }
+    
+    // ascending in order
+    for (int i = 0; i < students - 1; i++) {
+        for (int j = 0; j < students - i - 1; j++) {
+            if (grades[j] > grades[j + 1]) {
+                int temp = grades[j];
+                grades[j] = grades[j + 1];
+                grades[j + 1] = temp;
+            }
+        }
+    }
+    cout << "grades in ascending order:" << endl;
+    for (int r = 0; r < students; r++) {
+        cout << grades[r] << endl;
+    }
+    
+    return 0;
+}
