@@ -12,9 +12,8 @@ int main()
     //cin >> rows;
     //cout << "enter number col";
     //cin >> cols;
-    
-    
-    int a[5];
+
+
     for (int r = 0; r < 9; r++){
         for(int c = 0; c < 5; c++){
             array[r][c] = 0;
