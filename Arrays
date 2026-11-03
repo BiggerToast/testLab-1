@@ -7,6 +7,7 @@ const int SIZE = 5;
     for(int i = 0; i < SIZE; i++){
         stars [i] = '*'; // what ever is in ( i ) changes * rather than garbage
         cout << stars[i] << endl;
+            // cin >> array[i]; // this can also be used
     }
     
     //cout << "debug: [1] " <<stars[0] << endl;/// output statment using the 1
