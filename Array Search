@@ -1,6 +1,6 @@
-int search(int point, const int numbers[], int ARRAY_SIZE){
+int search(int searchpoint, const int numbers[], int ARRAY_SIZE){
     for (int i = 0; i < ARRAY_SIZE; i++){
-        if (numbers[i] == point){
+        if (numbers[i] == searchpoint){
             return i;
         }
     }
