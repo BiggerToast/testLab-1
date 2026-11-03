@@ -1,16 +1,10 @@
-#include <iostream>
-
-using namespace std;
-
 int search(int point, const int numbers[], int ARRAY_SIZE){
     for (int i = 0; i < ARRAY_SIZE; i++){
         if (numbers[i] == point){
             return i;
         }
-        else if(i == ARRAY_SIZE-1){
-            return -1;
-        }
     }
+    return -1;
 }
 
 int main()
