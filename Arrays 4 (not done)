@@ -12,7 +12,7 @@ int calculateSum(int numbers[], int arr_size){
     int sum = 0;
     
     for(int i = 0; i<arr_size; i++){
-        sum += numbers[i];
+        sum = sum + numbers[i];
     }
     
     return sum;
