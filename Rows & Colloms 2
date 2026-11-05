@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    const int row = 4;
+    const int col = 4;
+    int array[row][col];
+    
+    
+     for (int r = 0; r < 4; r++){
+        for(int c = 0; c < 4; c++){
+            array[r][c] = 0;
+            
+    array[0][0] = 4;
+    array[0][3] = 1;
+    array[1][2] = 4;
+    array[1][3] = 2;
+    array[2][0] = 2;
+    array[2][1] = 3;
+    array[2][3] = 4;
+    array[3][0] = 1;
+    array[3][1] = 4;
+    
+    cout << array[r][c];
+        }
+    }
+    
+
+    return 0;
+}
