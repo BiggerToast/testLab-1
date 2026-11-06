@@ -9,7 +9,6 @@ using namespace std;
     const int column = 8;
     
 void loads(string contests[], double score[][column]){
-    
     ifstream fin("swimming_scores.txt");
     for(int i = 0; !fin.eof() && i < rows; i++){
         fin >> contests[i];
@@ -17,8 +16,6 @@ void loads(string contests[], double score[][column]){
             fin >>  score[i][j];
         }
     }
-    
-    
     fin.close();
 }
 
@@ -36,7 +33,17 @@ void print(string contests[], double score[][column]){
         }
         cout << endl;
     }
+}
+
+void average(double score[][column], double finalscore[]){
     
+    for(int i = 0;i < rows;i++){
+    double sum = 0;
+        for(int o = 0; o < column - 1;o++){
+            sum += score[i][o];
+        }
+    finalscore[i] = sum;
+    }
 }
 
 int main()
@@ -52,12 +59,16 @@ int main()
     loads(contests, score);
     
     //sets the name in the top
-    //for(int i =0; i < rows;i++){
-    //    cout << contests[i] << " " ;
-    //}
-    //cout << endl;
     
-    print(contests, score);
+    
+    //print(contests, score);
+    
+    cout << endl;
+    
+    average(score, finalscore);
+    for(int i =0; i < rows;i++){
+        cout << finalscore[i] << " " ;
+    }
     
     //its the same thing for print
     //for (int r = 0; r < rows; r++){
