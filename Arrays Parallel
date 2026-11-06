@@ -46,6 +46,7 @@ void average(double score[][column], double finalscore[]){
     }
 }
 
+
 int main()
 {
     
