@@ -62,7 +62,7 @@ int main()
     //sets the name in the top
     
     
-    //print(contests, score);
+    print(contests, score);
     
     cout << endl;
     
