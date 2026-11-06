@@ -28,6 +28,17 @@ void sortRows(double score[][column]) {
     }
 }
 
+void print(string contests[], double score[][column]){
+    for (int r = 0; r < rows; r++){
+        cout << contests[r] << " ";
+        for(int c = 0; c < column; c++){
+            cout << score[r][c] << " ";
+        }
+        cout << endl;
+    }
+    
+}
+
 int main()
 {
     
@@ -40,16 +51,23 @@ int main()
     
     loads(contests, score);
     
-    for(int i =0; i < rows;i++){
-        cout << contests[i] << " " ;
-    }
-    cout << endl;
-    for (int r = 0; r < rows; r++){
-        for(int c = 0; c < column; c++){
-            cout << score[r][c] << " ";
-        }
-        cout << endl;
-    }
+    //sets the name in the top
+    //for(int i =0; i < rows;i++){
+    //    cout << contests[i] << " " ;
+    //}
+    //cout << endl;
+    
+    print(contests, score);
+    
+    //its the same thing for print
+    //for (int r = 0; r < rows; r++){
+        // sets the name on the sides
+    //    cout << contests[r] << " ";
+    //    for(int c = 0; c < column; c++){
+    //        cout << score[r][c] << " ";
+    //    }
+    //    cout << endl;
+    //}
     
     sortRows(score);
 
