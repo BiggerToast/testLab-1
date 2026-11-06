@@ -1,0 +1,57 @@
+#include <iostream>
+#include <algorithm>
+#include <fstream>
+using namespace std;
+
+    //althletes in a row
+    const int rows = 7;
+    //judges for columns
+    const int column = 8;
+    
+void loads(string contests[], double score[][column]){
+    
+    ifstream fin("swimming_scores.txt");
+    for(int i = 0; !fin.eof() && i < rows; i++){
+        fin >> contests[i];
+        for (int j = 0; j < column; j++){
+            fin >>  score[i][j];
+        }
+    }
+    
+    
+    fin.close();
+}
+
+void sortRows(double score[][column]) {
+    for (int i = 0; i < rows; ++i) {
+        sort(score[i], score[i] + column); // Sort each individual row
+    }
+}
+
+int main()
+{
+    
+    //ammout of contests
+    string contests[rows];
+    //scores for the contests
+    double score[rows][column];
+    //additions for all the scores
+    double finalscore[rows];
+    
+    loads(contests, score);
+    
+    for(int i =0; i < rows;i++){
+        cout << contests[i] << " " ;
+    }
+    cout << endl;
+    for (int r = 0; r < rows; r++){
+        for(int c = 0; c < column; c++){
+            cout << score[r][c] << " ";
+        }
+        cout << endl;
+    }
+    
+    sortRows(score);
+
+    return 0;
+}
