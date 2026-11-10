@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+const int row = 3;
+const int Cols = 5;
+
+double outlier(double readings[][Cols]){
+    double outread = readings[0][0];
+    for(int r = 0;r < row;r++){
+        for(int c;c , Cols;c++){
+            if (readings[r][c] > 0.2){
+            outread = readings[r][c];
+            }
+        }
+    }   
+    return outread;
+}
+
+int main()
+{
+    double readings[row][Cols]{
+        {0.2, 0.2, 0.1},
+        {0.2, 0.2, 0.9},
+        {0.1, 0.12, 0.1},
+    };
+    
+    double r = outlier(readings);
+    cout << "we found it" << r;
+
+    return 0;
+}
