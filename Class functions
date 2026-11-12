@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+class Car{
+private:
+    //data
+    string make;
+    string model;
+    int year;
+public:
+    //functions
+    void speedup();
+    void slowdown();
+    void stop();
+    // getters fn
+    string getMake(){
+        return make;
+    };
+    string getModel(){
+        return model;
+    };
+    int getYear(){
+        return year;
+    };
+    // setters fn
+    void setMake(string newMake){
+        make = newMake;
+    };
+    void setModel(string newModel){
+        model = newModel;
+    };
+    void setYear(int newYear){
+        year = newYear;
+    };
+    
+};
+
+int main()
+{
+    cout<<"Hello World\n";
+    
+    Car myCar;
+    myCar.setMake("toyota");
+    
+    cout << "make: " << myCar.getMake();
+
+    return 0;
+}
