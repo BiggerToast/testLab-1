@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Car{
+class Car{                  // class name
 private:
-    //data
+                            //data
     string make;
     string model;
     int year;
 public:
-    //functions
+                            //functions
     void speedup();
     void slowdown();
     void stop();
