@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class worker{
+    private:
+    string name;
+    
+    public:
+    string getname(){
+        return name;
+    }
+    
+    void setname(string newname){
+        name = newname;
+    };
+    
+    void workerprint(){
+        cout << "workers name:" << name << endl;
+    }
+    
+};
+    // for the first part set and get are backwords.
+    // set is a void not a string
+    //get is a string not a void
+    //set should have string newname
+    // no idea.
+
+
+
+int main()
+{
+    cout<<"Hello World\n";
+    
+    worker w1;
+    w1.setname("josh");
+    w1.workerprint();
+
+    return 0;
+}
