@@ -1,0 +1,89 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+class rectangle {
+    
+    public:
+    
+    int k;
+    void doitagain(int rewval){
+        x = rewval;
+        k = rewval;
+    }
+    
+    rectangle(){ // default
+        x = 5;
+        int length = 20;
+        int width = 23;
+    }
+    rectangle(int new_x){
+        x = new_x;
+        int length = 20;
+        int width = 23;
+    }
+    
+    rectangle(int new_l, int new_w){
+        x = 5;
+        int length = new_l;
+        int width = new_w;
+    }
+    //rectangle(int new_x, new_l, new_w){
+    //    x = new_x;
+    //    int length = new_l;
+    //    int width = new_w;
+    //}
+    
+    rectangle(int new_x, new_l, new_w): x(newx), length(newl), width(neww);
+    
+    int get_width(){
+        return width;
+    }
+    private:
+    int x;
+    
+    int length;
+    int width;
+    
+    
+    void doit();
+    
+};
+
+
+
+    void print(const rectangle & r){
+        cout << r.get_width();
+    }
+    
+    rectangle getrectangle(){
+        rectangle r;
+        return r;
+    }
+    
+    
+    //int x;
+    //int length;
+    //int width;
+
+int main()
+{
+    cout<<"Hello World\n";
+    
+    rectangle rec(25);
+    
+    print(rec);
+    
+    
+    //cout << rec.width << endl;
+    
+    rectangle r;
+    //cout << r.width << endl;
+    
+    
+    
+    //r.doit();
+    return 0;
+}
