@@ -1,0 +1,67 @@
+#include <iostream>
+#include <vector>
+#include "gamecharacter.h"
+
+using namespace std;
+
+// TODO 9: Upgrade the class as an API
+
+   void intro(GameCharacter gc){
+       gc.introduce();
+   }
+
+
+int main(){
+    // TODO 3: Instantiate one hero object
+    GameCharacter hero("link");
+
+    
+    
+    
+    // TODO 4: Instantiate three villain objects
+    
+    GameCharacter slime, skeleton, fluffy("fluffy");
+    slime.setName("slime");
+    skeleton.setName("skeleton");
+    fluffy.setName("fluffy");
+    //GameCharacter villain[3];
+    //villain[0] = slime;
+    //villain[1] = skeleton;
+    //villain[2] = fluffy;
+    
+    
+    
+    
+    
+    // TODO 5: Create an array of objects
+    
+    vector<GameCharacter> villain;
+    villain.push_back(slime);
+    villain.push_back(skeleton);
+    villain.push_back(fluffy);
+
+    
+    // TODO 6: Create and call a function that takes one object as parameter. 
+    // The purpose of the function is to introduce all heros and villans in the game.  
+    intro(hero);
+    for(int i = 0; i < 3; i++){
+        intro(villain[i]);
+    }
+
+
+
+    // TODO 7: Make the first villian attack the hero
+    villain[0].Attack();
+    
+
+
+
+    // TODO 8: After the attack. Reduce the hero's health 5 points.
+    int newHealth = hero.gethealth() - 5;
+    hero.sethealth(newHealth);
+    
+   
+
+
+    return 0;
+}
