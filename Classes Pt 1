@@ -2,6 +2,9 @@
 #include <vector>
 #include "gamecharacter.h"
 
+// remember to seperate the files in main, gamecharacter.h, and gamecharacter.cpp
+
+
 using namespace std;
 
 // TODO 9: Upgrade the class as an API
