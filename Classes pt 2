@@ -1,0 +1,21 @@
+#ifndef GAMECHARACTER_H
+#define GAMECHARACTER_H
+
+using namespace std;
+
+class GameCharacter {
+    private:
+    string name;
+    int health;
+    int attackPower;
+
+    public:
+    void introduce();
+    void Attack();
+    GameCharacter();
+    GameCharacter(string newName);
+    string getName() const;
+    void setName(string newName)const;
+    int gethealth();
+    void sethealth(int newscore) const;
+};
