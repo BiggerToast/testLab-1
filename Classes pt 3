@@ -1,0 +1,45 @@
+#include <iostream>
+#include "gamecharacter.h"
+
+
+using namespace std;
+
+    
+    
+    void GameCharacter:: introduce() {
+        cout << "I am " << name << "!" << endl;
+        cout << "Health: " << health << endl;
+        cout << "Attack Power: " << attackPower << endl;
+    }
+
+    void attack() {
+        cout << name << " attacks with " << attackPower << " power!" << endl;
+    }
+
+   GameCharacter(){
+        name = "";
+	    health = 100;
+	    attackPower = 1;
+   }
+   
+    GameCharacter(string newName){
+        name = newName;
+	    health = 100;
+	    attackPower = 5;
+   }
+   
+   // TODO 1: Add setters and getters. Decide which member function should be have read-only functionality
+   
+   string GameCharacter::getName() const {
+       return name;
+   }
+   void GameCharacter::setName(string newName)const{
+       name = newName;
+   }   
+   int GameCharacter::gethealth(){
+       return health;
+   };
+   
+   void GameCharacter::sethealth(int newscore) const{
+       health = newscore;
+   };
